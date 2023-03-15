@@ -1,6 +1,6 @@
 # code2pdf
 
-This image (thanks to @sedir) executes a code2pdf ruby based (thanks to @lucascaton) that outputs a PDF with all source code localated at `/code` at the container (exposed using volume).
+This image (thanks to [@sedir](https://github.com/sedir)) executes a code2pdf ruby based (thanks to [@lucascaton](https://github.com/lucascaton)) that outputs a PDF with all source code localated at `/code` at the container (exposed using volume).
 
 
 ## How to use
