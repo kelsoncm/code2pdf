@@ -5,7 +5,7 @@ This image (thanks to [@sedir](https://github.com/sedir)) executes a code2pdf ru
 
 ## How to use
 
-Execute docker image informing the source code at `/code`, the output PDF will as `_.pdf`.
+Execute docker image informing the source code at `/code`, the output PDF will be `_.pdf`.
 
 ```bash
 docker run --rm -v $PWD:/code kelsoncm/code2pdf .
