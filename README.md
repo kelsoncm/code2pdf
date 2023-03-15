@@ -11,4 +11,4 @@ Execute docker image informing the source code at `/code`, the output PDF will b
 docker run --rm -v $PWD:/code kelsoncm/code2pdf .
 ```
 
-You can ignore files to output putting a file named `.code2pdf` as specified here https://github.com/lucascaton/code2pdf#blacklist-file-example .
+> You can ignore files to output putting a file named `.code2pdf` as specified here https://github.com/lucascaton/code2pdf#blacklist-file-example .
