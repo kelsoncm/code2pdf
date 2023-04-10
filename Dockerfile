@@ -1,5 +1,5 @@
 # from ruby
-FROM ruby:2.7.7
+FROM ruby:3.2.1-slim
 
 # install gem code2pdf
 RUN gem install code2pdf
