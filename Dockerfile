@@ -1,5 +1,5 @@
 # from ruby
-FROM ruby:3.4.2-slim-bookworm
+FROM ruby:3.4.2-alpine3.21
 
 # install gem code2pdf
 RUN gem install code2pdf
