@@ -1,11 +1,16 @@
-# from ruby
-FROM ruby:3.4.2-alpine3.21
+FROM rust:1.75-alpine AS builder
 
-# install gem code2pdf
-RUN gem install code2pdf
+RUN apk add --no-cache musl-dev
+RUN cargo install code-to-pdf
 
-# set workdir
+
+
+FROM alpine:3.19
+COPY --from=builder /usr/local/cargo/bin/c2pdf /usr/local/bin/c2pdf
+
+# Instalar git para suporte a .gitignore (opcional)
+RUN apk add --no-cache git
+
 WORKDIR /code
-
-# set entrypoint
-CMD ["code2pdf"]
+ENTRYPOINT ["c2pdf"]
+CMD ["."]
